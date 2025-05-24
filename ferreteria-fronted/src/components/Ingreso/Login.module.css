@@ -1,0 +1,98 @@
+.container {
+  width: 300px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  color: rgba(61, 0, 110, 0.705);
+  position: relative;
+  background-color: #001e51;
+  box-sizing: border-box;
+  margin: 1rem auto;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 12px;
+}
+
+.errorMessage,
+.successMessage {
+  font-size: 0.875rem; /* 14px equivalente */
+  margin-top: 10px;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.successMessage {
+  color: green;
+}
+
+.rememberMe {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rememberMe input {
+  margin-right: 5px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #280998;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.loginBtn:hover {
+  background: #26008744;
+  border: 2px solid #1b00408f;
+}
+
+.forgotPassword,
+.signupLink {
+  color: #2c8ff9;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.signupText {
+  font-size: 0.875rem;
+  margin-top: 20px;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .loginBtn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,61 @@
+.cuadro{
+    background-color: #001e51a9;
+    border-radius: 15px;
+    color: rgb(79, 79, 79);
+   border: 2px solid rgb(0, 7, 70);
+   
+   justify-content: flex-start; /* Alinea todo al principio (arriba) */
+   align-items: center; /* Centra el contenido horizontalmente */
+   text-align: center;
+   padding-top: 0;
+   margin-top: 0;
+}
+.grid-nuevos{
+    display: grid;
+    grid-template-columns:  auto auto auto ;
+  
+    
+   gap: 10px;
+    padding :10px;
+    
+    height: 100%;
+    width: 100%;
+   
+    grid-template-rows:  400px auto ;
+}
+.cuadro1,.cuadro2,.cuadro3{
+    
+    overflow-y: scroll;
+}
+
+.cuadro3,.cuadro4,.cuadro5{
+    justify-content: center;
+}
+.cuadro1::-webkit-scrollbar,
+.cuadro2::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+}
+
+.cuadro1::-webkit-scrollbar-track,
+.cuadro2::-webkit-scrollbar-track {
+    background: #00014d; /* Color de fondo del "track" */
+}
+
+.cuadro1::-webkit-scrollbar-thumb,
+.cuadro2::-webkit-scrollbar-thumb {
+    background: #007bff; /* Color azul del "thumb" (la parte que mueves) */
+    border-radius: 4px;
+}
+
+.cuadro1::-webkit-scrollbar-thumb:hover,
+.cuadro2::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Azul más oscuro cuando haces hover */
+}
+.listaDistribuidores {
+    color: blue;
+    background-color: #00014d;
+  }
+  
+  .itemDistribuidor {
+    color: blue;
+  }

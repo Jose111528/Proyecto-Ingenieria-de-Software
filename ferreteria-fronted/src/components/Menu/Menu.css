@@ -1,0 +1,101 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* 250px es el tamaño fijo para la columna del menú, 1fr es para que la otra columna ocupe el resto */
+  height: 100%; /* Asegura que el grid ocupe todo el alto de la ventana */
+  width: 100%;
+ 
+}
+
+.menu {
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  color: rgb(79, 79, 79);
+ 
+  /* Hace que ocupe todo el alto disponible */
+}
+
+.menu-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 20px;
+  margin-top: 30px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 30px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color:#202022bd;
+}
+
+.menu-item.active {
+  background-color: #202022;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* El área de contenido (la segunda columna) se ajusta a lo que tenga adentro */
+.menu2 {
+  position: relative; /* Muy importante para que funcione el ::after */
+  padding: 20px;
+  background-image: url('../../assets/images/im2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Opcional, para evitar desbordes */
+}
+
+/* Overlay */
+.menu2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #001230e6; /* Negro al 50% de opacidad */
+  z-index: 1;
+}
+
+/* Todo el contenido interno debe tener z-index mayor */
+.menu2 > * {
+  position: relative;
+  z-index: 2;
+}
+
+.menu1{
+  background-color:#000917; 
+}
+
+h8{
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform:capitalize;
+  
+  width: 150px;
+  border-radius: 10px;
+}
+
+.imagen{
+  width: 150px;
+  height: 120px;
+  margin-top: -80px;
+}

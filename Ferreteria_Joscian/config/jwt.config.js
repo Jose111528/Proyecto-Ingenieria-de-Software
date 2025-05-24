@@ -1,0 +1,24 @@
+const jwt = require('jsonwebtoken');
+
+/* The `exports.generateToken` function is responsible for generating a JSON Web Token (JWT) in
+Node.js.  */
+exports.generateToken = (userId, role) => {
+  const payload = { userId, role };
+  const secret = 'mi_clave_secreta'; 
+  const options = { expiresIn: '1h' };  
+
+  return jwt.sign(payload, secret, options);
+};
+
+
+/* The `exports.verifyToken` function is responsible for verifying a JSON Web Token (JWT) using the
+`jsonwebtoken` library in Node.js. */
+exports.verifyToken = (token) => {
+  const secret = 'mi_clave_secreta'; 
+  try {
+    const decoded = jwt.verify(token, secret);
+    return decoded;
+  } catch (error) {
+    return null;
+  }
+};

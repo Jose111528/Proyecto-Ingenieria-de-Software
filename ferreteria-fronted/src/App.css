@@ -1,0 +1,53 @@
+/* Aplica a toda la pantalla */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden; /* <<--- fuerza a NO permitir scroll vertical */
+}
+
+.app-container {
+  width: 100%;
+  height: 100vh; /* full pantalla */
+  
+    background: linear-gradient(to bottom, #003366, #001f33);
+    /* #003366 es un azul marino más claro y #001f33 es un azul marino oscuro */
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+ 
+}
+
+
+/* Caja del login */
+.app-box {
+  background-color: #001e51;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+ border: 2px solid rgb(0, 7, 70);
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.79);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+
+h3 {
+  font-size: 17px;
+  font-weight: 800px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  
+}
+
+h1{
+  margin-top: 60px;
+}

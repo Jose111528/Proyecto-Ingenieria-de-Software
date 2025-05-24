@@ -1,0 +1,45 @@
+.inputContainer {
+  position: relative;
+  width: 90%;
+  margin: 20px 0;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputBox {
+  width: 85%;
+  padding: 12px;
+  border: 2px solid #ffffffad;
+  border-radius: 10px;
+
+  background:transparent;
+  color: rgb(255, 248, 248);
+  outline: none;
+  transition: 0.3s;
+}
+.inputBox:hover{
+  background-color: #f60;
+  color: aliceblue;
+}
+
+.inputWrapper label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: medium;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+  font-weight: 700;
+}
+
+.inputBox:focus + label,
+.inputBox:not(:placeholder-shown) + label {
+  top: -5px;
+  font-size: 13px;
+  color: #ffffff;
+
+}

@@ -1,0 +1,200 @@
+.productos-container {
+  padding: 30px;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: -25px;
+  width: 1130px;
+  max-width: 1200px;
+  height: 700px;
+  max-height: 700px;
+  margin-top: -20px;
+
+  background-image: url('../../assets/images/im2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Overlay */
+.productos-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #001230e6;
+  /* Negro al 50% de opacidad */
+  z-index: 1;
+}
+
+/* Todo el contenido interno debe tener z-index mayor */
+.productos-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.form-productos {
+  width: 100%;
+  margin-top: 30px;
+  
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px #26034c;
+}
+
+
+
+select {
+  margin-top: 20px;
+  border: 2px solid #9a9a9a;
+  background: #002d7be6;
+  padding: 5px;
+  transition: 0.4s;
+  color: #ddd;
+  font-weight: 600;
+  height: 50px;
+}
+
+select:hover,
+select:focus {
+  background: #ffffff;
+  color: #000000;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
+
+
+option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+
+  border: 2px solid #ddd;
+  background: #eee;
+  padding: 10px;
+  transition: 0.4s;
+}
+option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+option:nth-of-type(odd) {
+  background: #fff;
+}
+
+option:hover,
+option:focus {
+  background: plum;
+}
+
+.tabla-container{
+  background-color:#fff;
+  overflow-y: auto;
+  height: 350px;
+  border-radius: 15px;
+}
+.tabla-container,tr{
+  background-color: white;
+  
+}
+
+.tabla-productos ,th{
+  position: sticky;  /* Esto hace que el encabezado se quede fijo */
+  top: 0;
+  height: 30px;
+  background-color: #003084;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px 10px;
+  border-radius: 6px;
+  
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+
+.tabla-productos th:last-child{
+  border-top-right-radius: 10px;
+}
+
+ 
+.tabla-productos th:first-child{
+  border-top-left-radius: 20px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover efecto */
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+.tabla-productos,th, td {
+  text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    padding: 10px 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    
+  }
+.tabla-productos,th{
+  color: #fff;
+}
+/* Grid para formulario */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+/* Título */
+h2 {
+  margin-right: 150px;
+  color: #f3eded;
+  margin-bottom: 0;
+}
+
+/* Botón agregar producto */
+.boton-agregar {
+  background-color: rgba(142, 1, 1, 0.957);
+  color: white;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-weight: bold;
+  width: 300px;
+  margin-left: 350px;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+.boton-agregar:hover{
+  background-color: #ef4444;
+ 
+}

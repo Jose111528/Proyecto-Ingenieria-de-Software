@@ -1,0 +1,247 @@
+/* Venta.module.css */
+
+.ventas-container {
+  width: 100%;
+height: 100%;
+
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #003084;
+  min-height: 100vh;
+}
+
+.ventas-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.ventas-layout {
+  display: flex;
+  flex-direction: row; /* Este es el cambio clave */
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.input1{
+  background-color: #001e51db;;
+  
+}
+.inputWrapper label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: medium;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+
+.ventas-productos {
+  width: 650px;
+  margin-left: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ventas-carrito {
+  width: 400px;
+  margin-left: -1px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.ventas-productos h3,
+.ventas-carrito h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #444;
+}
+
+
+.producto-seleccionado h3{
+  color: rgb(255, 255, 255);
+}
+
+.producto-seleccionado {
+  margin-top: 20px;
+  background-color: #003084d2;;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.producto-seleccionado p {
+  margin: 5px 0;
+}
+
+.ventas-carrito table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #003084;
+}
+
+.ventas-carrito th,
+.ventas-carrito td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.ventas-carrito th {
+  background-color: #003084;;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .ventas-layout {
+    flex-direction: column;
+  }
+
+  .ventas-productos,
+  .ventas-carrito {
+    flex: 1 1 100%;
+  }
+}
+.input2{
+  width: 60px;
+  margin-left: 10px;
+}
+
+.producto-info {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nombre-producto {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.precio-producto {
+  font-size: 1rem;
+  color: #27ae60;
+  margin-bottom: 0.3rem;
+}
+
+.stock-producto {
+  font-size: 0.95rem;
+  color: #2980b9;
+}
+.producto-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+.producto-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.icono {
+  font-size: 1.25rem;
+  color: #0077cc;
+}
+
+.info-text {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #333;
+}
+.carrito-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+}
+
+.ticket {
+  background-color: #fdfdfd;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: "Courier New", monospace;
+  overflow-y: auto;
+}
+
+.ticket-item {
+  margin-bottom: 0.8rem;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.producto-nombre {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.producto-detalle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.ticket-total {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #222;
+}
+
+.icono, .icono-total {
+  color: #2d89ef;
+  font-size: 1.2rem;
+}
+
+.botones-ticket {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tabla-container1{
+  height: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+
+}
+.tabla-productos1{
+  
+  height: 100%;
+  max-height: 300px;
+}

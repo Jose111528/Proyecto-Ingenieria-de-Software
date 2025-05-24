@@ -1,0 +1,92 @@
+/* Contenedor principal */
+.trabajadores-container {
+  width: 400px;
+  height: 650px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 3px solid rgb(158, 158, 158);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+ justify-content: center;
+ background-color: #001e51a9;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  margin-left: 350px;
+}
+
+.trabajadores-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  pointer-events: none; 
+}
+
+
+.inputContainer .inputBox:focus+label,
+.inputContainer .inputBox:not(:placeholder-shown)+label {
+  top: 5px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.trabajadoresBtn {
+  width: 100%;
+  padding: 12px;
+  background: #712ccb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.trabajadoresBtn:hover {
+  background: #26008797;
+}
+
+.successMessage {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.scroll-container {
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.worker-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.deleteBtn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+ul{
+  color: black;
+}

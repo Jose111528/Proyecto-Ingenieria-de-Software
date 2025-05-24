@@ -1,0 +1,135 @@
+.grid-layout{
+
+  display: grid;
+  grid-template-columns: 30% 25% auto auto;
+
+  
+ gap: 10px;
+  padding :10px;
+  
+  height: 100%;
+  width: 100%;
+ 
+  grid-template-rows: 10% 20% 30% auto auto;
+}
+.item{
+ 
+  background-color: #001e51a9;
+  border-radius: 15px;
+  color: rgb(79, 79, 79);
+ border: 2px solid rgb(0, 7, 70);
+ 
+ justify-content: flex-start; /* Alinea todo al principio (arriba) */
+ align-items: center; /* Centra el contenido horizontalmente */
+ text-align: center;
+ padding-top: 0;
+ margin-top: 0;
+
+}
+.item-1{
+  grid-column: 1/5;
+}
+.item-4{
+  grid-column: 3/5;
+  grid-row: 2/6;
+}
+.item-7{
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+.filtros-fecha {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 1px;
+  padding: 2px;
+  
+}
+
+.filtro-select,
+.filtro-fecha-dia,
+.filtro-fechas-rango > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  
+}
+.filtro-fecha-dia{
+  background-color:#066af7aa;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.filtro-fechas-rango {
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  background-color:#066af7aa;
+}
+.filtros-fecha label {
+  font-size: 14px;
+  margin-bottom: 2px;
+  border-radius: 10px;
+
+   /* también podés usar esto en lugar del gap si preferís */
+}
+.filtro-select label {
+  margin-bottom: -20px; 
+  /* o incluso 2px si querés que esté bien pegado */
+}
+
+ 
+ 
+  
+
+  h4{
+    margin-top: 2px;
+    font-size: 22px;
+    color: rgb(0, 215, 253);
+  }
+ .top{
+ 
+  max-height: 150px;
+  height: 150px;
+  overflow-y: scroll;
+
+ }
+li{
+  font-family: 'Segoe UI', sans-serif;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  padding:5px;
+  background-color: rgba(255, 7, 7, 0.598);
+  border: 1px solid rgb(0, 12, 147);
+  border-radius: 10px;
+  margin: 3px;
+  color: rgb(255, 255, 255);
+  
+}
+.tabla-c{
+ 
+  height: 200px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.columna-dist{
+ 
+  height: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.btn-generar-pdf {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.estad{
+  display: grid;
+  overflow-y: scroll;
+}
