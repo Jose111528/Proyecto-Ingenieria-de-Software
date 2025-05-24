@@ -81,8 +81,8 @@ FERRETERIA-FRONTED/
 │   │   ├── Ingreso/             # Login y autenticación
 │   │   ├── Input/               # Componentes de entrada (inputs)
 │   │   ├── Menu/                # Menú de navegación principal
-│   │   ├── NuevosElementos/     # Agregar marcas y distribuidores
-│   │   ├── Productos/           # Gestión de productos
+│   │   ├── DistribuidoresMarcas/     # Agregar marcas y distribuidores
+│   │   ├── GestionProductos/           # Gestión de productos
 │   │   ├── Sidebar/             # Barra lateral del dashboard
 │   │   ├── Trabajadores/        # Gestión de empleados
 │   │   └── Ventas/              # Gestión de ventas
